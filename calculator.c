@@ -27,8 +27,4 @@ int main()
    } else{
       printf("\nCarattere errato\n");
    }
-   
-   
-   
-   return(0);
 }
