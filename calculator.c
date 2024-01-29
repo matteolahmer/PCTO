@@ -12,19 +12,23 @@ int main()
    scanf(" %c", &c);
    printf("\nInserisci un altro numero:\n");
    scanf(" %d", &n2);
-   if("c == +"){
-    risultato = n1 + n2;
-    printf("\nRisultato: %d\n", risultato);
-   } else if ("c == -")
+   if(c == '+')
    {
-    risultato = n1 - n2;
-    printf("\nRisultato: %d\n", risultato);
+      printf("\nRisultato: %d\n", n1 + n2);
+   } else if (c == '-')
+   {
+      printf("\nRisultato: %d\n", n1 - n2);
+   } else if (c == '*')
+   {
+      printf("\nRisultato: %d\n", n1 * n2);
+   } else if (c == '/')
+   {
+      printf("\nRisultato: %d\n", n1 / n2);
+   } else{
+      printf("\nCarattere errato\n");
    }
    
-
-
+   
+   
+   return(0);
 }
-
-
-
-
