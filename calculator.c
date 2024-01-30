@@ -5,7 +5,7 @@ int main()
    int n1;
    int n2;
    char c;
-   int risultato;
+
    printf("Inserisci un numero:\n");
    scanf(" %d", &n1);
    printf("\nInserisci un'operazione:\n");
@@ -15,16 +15,21 @@ int main()
    if(c == '+')
    {
       printf("\nRisultato: %d\n", n1 + n2);
-   } else if (c == '-')
+   } 
+   else if (c == '-')
    {
       printf("\nRisultato: %d\n", n1 - n2);
-   } else if (c == '*')
+   } 
+   else if (c == '*')
    {
       printf("\nRisultato: %d\n", n1 * n2);
-   } else if (c == '/')
+   } 
+   else if (c == '/')
    {
       printf("\nRisultato: %d\n", n1 / n2);
-   } else{
+   } 
+   else{
       printf("\nCarattere errato\n");
    }
+   return(0);
 }
