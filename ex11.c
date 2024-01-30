@@ -20,7 +20,7 @@ int main()
     {
         annidiff = anno - 1969;
         printf("Sei nato %d anno/i dopo l'anno del primo uomo sulla luna\n", annidiff);
-    }
+    } 
     
     return(0);
 }
