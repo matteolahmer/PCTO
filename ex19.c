@@ -3,22 +3,22 @@
 void carattere()
 {
     char c;
-    printf("Inserisci un carattere:\n");
+    printf("Inserisci una lettera:\n");
     scanf(" %c", &c);
     if ((c >= 97 && c <= 122) || c >= 65 && c <= 91)
     {
         if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u')
         {
-            printf("Il tuo carattere è una vocale\n");
+            printf("La tua lettera è una vocale\n");
         }
             else
             {
-                printf("Il tuo carattere è una consonante\n");
+                printf("La tua lettera è una consonante\n");
             }           
     }
     else
     {
-        printf("Il tuo carattere non è valido\n");
+        printf("La tua lettera non è valida\n");
     }
 }
 
