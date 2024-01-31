@@ -13,4 +13,5 @@ int main()
         n1 = n1 - 1;  
     }
     printf("%d\n", x);
+    return(0);
 }

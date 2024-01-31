@@ -2,12 +2,11 @@
 
 int main()
 {
-    int x = 0;
-    
-    while(x <= 20)
+    int x = 100;
+    while (x >= 0)
     {
         printf(" %d\n", x);
-        x = x + 2;
+        x = x - 2;
     }
     return(0);
 }

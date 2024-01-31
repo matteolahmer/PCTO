@@ -25,4 +25,5 @@ int main()
     {
         printf("Non è un numero primo\n");
     }
+    return(0);
 }
