@@ -15,10 +15,15 @@ int main()
       int volte; 
       printf("\nA quanto vuoi elevare il numero?\n");
       scanf(" %d", &volte);
-      if (volte == 0)
+      if (volte == 0 && n1 != 0)
       {
          printf("Risultato: 1\n");
       }
+      else if ((volte == 0 && n1 == 0) || (volte != 0 && n1 == 0))
+      {
+         printf("Risultato: indefinito\n");
+      }
+
       else if (volte < 0 )
       {
          volte = volte * -1;
