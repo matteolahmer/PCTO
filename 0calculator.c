@@ -5,6 +5,8 @@ int main()
    int n1;
    int n2;
    char c;
+   int n1saver;
+   int volte;
 
    printf("Inserisci un numero:\n");
    scanf(" %d", &n1);
@@ -12,17 +14,21 @@ int main()
    scanf(" %c", &c);
    if (c == '^')
    {
-      int volte; 
       printf("\nA quanto vuoi elevare il numero?\n");
       scanf(" %d", &volte);
       if (volte == 0 && n1 != 0)
       {
          printf("Risultato: 1\n");
       }
-      else if ((volte == 0 && n1 == 0) || (volte != 0 && n1 == 0))
+      else if ((volte == 0 && n1 == 0) || (volte < 0 && n1 == 0))
       {
          printf("Risultato: indefinito\n");
       }
+      else if (volte > 0 && n1 == 0)
+      {
+         printf("Risultato: 0\n");
+      }
+      
 
       else if (volte < 0 )
       {
@@ -31,7 +37,7 @@ int main()
       }
       else
       {
-         int n1saver = n1;
+         n1saver = n1;
          while(volte != 1 && volte > 0)
       {
          n1 = n1 * n1saver;
